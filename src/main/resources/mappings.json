@@ -1,0 +1,62 @@
+{
+  "application_name": {
+    "searchPatterns": [
+      "cloudfoundry:$.application_name",
+      "env:K_SERVICE"
+    ]
+  },
+  "cloudant_apikey": {
+    "searchPatterns": [
+      "env:service_cloudant:$.apikey",
+      "file:/./src/main/resources/localdev-config.json:$.cloudant_apikey"
+    ]
+  },
+  "cloudant_host": {
+    "searchPatterns": [
+      "env:service_cloudant:$.host",
+      "file:/./src/main/resources/localdev-config.json:$.cloudant_host"
+    ]
+  },
+  "cloudant_iam_apikey_description": {
+    "searchPatterns": [
+      "env:service_cloudant:$.iam_apikey_description",
+      "file:/./src/main/resources/localdev-config.json:$.cloudant_iam_apikey_description"
+    ]
+  },
+  "cloudant_iam_apikey_name": {
+    "searchPatterns": [
+      "env:service_cloudant:$.iam_apikey_name",
+      "file:/./src/main/resources/localdev-config.json:$.cloudant_iam_apikey_name"
+    ]
+  },
+  "cloudant_iam_role_crn": {
+    "searchPatterns": [
+      "env:service_cloudant:$.iam_role_crn",
+      "file:/./src/main/resources/localdev-config.json:$.cloudant_iam_role_crn"
+    ]
+  },
+  "cloudant_iam_serviceid_crn": {
+    "searchPatterns": [
+      "env:service_cloudant:$.iam_serviceid_crn",
+      "file:/./src/main/resources/localdev-config.json:$.cloudant_iam_serviceid_crn"
+    ]
+  },
+  "cloudant_url": {
+    "searchPatterns": [
+      "env:service_cloudant:$.url",
+      "file:/./src/main/resources/localdev-config.json:$.cloudant_url"
+    ]
+  },
+  "cloudant_username": {
+    "searchPatterns": [
+      "env:service_cloudant:$.username",
+      "file:/./src/main/resources/localdev-config.json:$.cloudant_username"
+    ]
+  },
+  "cloudant_serviceInfo": {
+    "searchPatterns": [
+      "env:service_cloudant:$.serviceInfo",
+      "file:/./src/main/resources/localdev-config.json:$.cloudant_serviceInfo"
+    ]
+  }
+}
